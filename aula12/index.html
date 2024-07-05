@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.ico" type="image/png">
+    <title>Desafio De Front-End</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="logo.webp" width="50px" alt="Logo">
+        </div>
+        <h1>Delicious Burger</h1>
+        <nav>
+            <button onclick="abrirMenu()">
+                <hr>
+                <hr>
+                <hr>
+            </button>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mais-vistos.html">Mais vistos</a></li>
+                <li><a href="oferta-do-dia.html">Oferta do dia</a></li>
+                <li><a href="entrar.html">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="carrossel">
+            <button class="carrossel-button" id="carrossel-anterior" onclick="anterior()"><</button>
+            <div class="carrossel-container">
+                <ul>
+                    <li><img src="banner.webp"></li>
+                    <li><img src="item.webp"></li>
+                    <li><img src="banner.webp"></li>
+                </ul>
+            </div>
+            <button class="carrossel-button" id="carrossel-proximo" onclick="proximo()">></button>
+        </section>
+        <section id="gallery">
+            <div class="gallery-item">
+                <img src="item.webp" alt="Burger and Fries 1">
+            </div>
+            <div class="gallery-item">
+                <img src="item.webp" alt="Burger and Fries 2">
+            </div>
+            <div class="gallery-item">
+                <img src="item.webp" alt="Burger and Fries 3">
+            </div>
+            <div class="gallery-item">
+                <img src="item.webp" alt="Burger and Fries 4">
+            </div>
+        </section>
+        <section id="about">
+            <h2>Sobre o site</h2>
+            <p>Desafio De Front-End</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Desafio De Front-End</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

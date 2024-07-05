@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+header button {
+    height: 40px;
+    width: 45px;
+    background-color: #545454;
+    border: 1px solid #000;
+    color: #fff;
+}
+header button hr {
+    border: 1px solid #918e8e;
+}
+
+#logo img {
+    height: 50px;
+}
+header nav{
+    position: relative;
+}
+
+header nav ul#menu {
+    list-style: none;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    right: -20px;
+    padding: 5px;
+    background-color: #333;
+    width: 150px;
+    
+}
+
+header nav ul#menu li {
+    margin: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+header nav ul#menu li:last-child {
+    border-bottom: 0;
+}
+
+header nav ul#menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav .menu-aberto{
+    display: block !important;
+}
+
+
+#carrossel img {
+    width: 100%;
+    height: auto;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#about {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+#about h2 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#carrossel {
+    display: flex;
+    position: relative;
+}
+#carrossel div.carrossel-container {
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+#carrossel div ul {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+#carrossel div ul li {
+    width: 992px;
+    height: 150px;
+}
+#carrossel .carrossel-button{
+    background-color: transparent;
+    border: 0px;
+    position: absolute;
+    height: 100%;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 3px #000;
+}
+#carrossel #carrossel-anterior{
+    left: 0px;
+}
+#carrossel #carrossel-proximo{
+    right: 0px;
+}
+
+   
+
+@media (min-width: 993px) {
+    header nav button {
+        display: none;
+    }
+
+    header nav ul {
+        display: flex;
+    }
+    
+    #carrossel div ul li {
+        height: 350px;
+    }
+    #carrossel .carrossel-button{
+        background-color: #fff;
+        border: 5px outset #ccc;
+        border-radius: 15px;
+        position: unset;
+        height: unset;
+        font-weight: bold;
+        font-size: 30px;
+        color: #fff;
+        text-shadow: 2px 2px 3px #000;
+    }
+
+    header nav ul#menu {
+        display: flex !important;
+        position: unset;
+        z-index: unset;
+        right: unset;
+        padding: unsete;
+        background-color: unset;
+        width: unset;
+    }
+    
+    header nav ul#menu li {
+        margin: unset;
+        padding-left: 10px;
+        border-bottom: unset;
+    }
+        
+}
