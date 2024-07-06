@@ -39,6 +39,31 @@ header nav{
     position: relative;
 }
 
+header nav button::before{
+    content: "";
+    position: absolute;
+    top: 32%;
+    left: 28%;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    box-shadow: 0 6px 0 #fff, 0 12px 0 #fff;
+}
+
+header nav button.aberto::before{
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 26%;
+    width: 20px;
+    height: 20px;
+    background-color: unset;
+    box-shadow: unset;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: rotate(310deg);
+}
+
 header nav ul#menu {
     list-style: none;
     display: none;

@@ -29,11 +29,13 @@ window.addEventListener('resize', function() {
     ajustaImagens()
 });
 
-function abrirMenu(){
+function abrirMenu(botao){
     let menu = document.getElementById('menu');
     if(menu.className != 'menu-aberto'){
         menu.className = 'menu-aberto';
+        botao.className = 'aberto';
     }else{
         menu.className = '';
+        botao.className = '';
     }
 }
