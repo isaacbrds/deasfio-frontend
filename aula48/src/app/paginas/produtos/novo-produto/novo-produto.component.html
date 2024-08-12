@@ -1,0 +1,12 @@
+<section class="container">
+    <div class="row" style="margin-top: 20px;">
+        <h1 class="col-11">Novo produto</h1>
+        <div class="col-1">
+            <a routerLink="/produtos" class="btn btn-default">Voltar</a>
+        </div>
+    </div>
+    <hr>
+    <div class="form">
+        <app-form-produto [mensagemDeErro]="mensagem" (submitForm)="criarProduto($event)"></app-form-produto>
+    </div>
+</section>
